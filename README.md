@@ -2,7 +2,7 @@
 
 - Landing Page
 
-[**Live Preview**]()
+[**Live Preview**](https://attorneystar.netlify.app/)
 
 **Screenshot:**
 
