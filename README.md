@@ -1,12 +1,24 @@
-## CSS Starter Template
+### Attorneyster Website
 
----
+- Landing Page
 
-**A special CSS starter kit for Front End Developers.**
+[**Live Preview**]()
 
-- CSS3
+**Screenshot:**
+
+![](screenshot.png)
+
+#### Tech Stack:
+
 - HTML5
+- CSS3
+- Javascript
+- Resets.css
 - Normalize.css
-- Reset.css
+- Box Icons
+
+#### Design
+
+- [Figma design](https://www.figma.com/file/slMQxER5qTheQhyvE7WiXL/Attorneyster?node-id=2%3A2&t=e6MhjE0xMPmkNns8-0)
 
 > Created by Jahongir Murodboev
