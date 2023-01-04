@@ -419,6 +419,9 @@ ul {
     outline: none;
     cursor: pointer;
   }
+  .hero-content {
+    margin-bottom: 60px;
+  }
   .hero-parent {
     display: flex;
     flex-direction: column-reverse;
@@ -426,6 +429,27 @@ ul {
   .hero-image {
     padding: 0px 40px;
     margin: 40px 0px;
+  }
+  .about {
+    display: flex;
+    flex-direction: column;
+  }
+  .about-image {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+  }
+  .about-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .about-content {
+    margin-left: 0;
+    margin-top: 40px;
+  }
+  .about-content-p {
+    width: auto;
   }
 }
 @media only screen and (max-width: 992px) {
@@ -474,6 +498,10 @@ ul {
     line-height: 33px;
     padding: 20px 50px;
   }
+  .about-content-box {
+    display: grid;
+    grid-template-columns: auto;
+  }
 }
 @media only screen and (max-width: 650px) {
   .site-logo img {
@@ -484,6 +512,14 @@ ul {
     font-size: 18px;
     line-height: 25px;
     padding: 18px 40px;
+  }
+  .about-content h2 {
+    font-size: 35px;
+    line-height: 48px;
+  }
+  .about-content-p {
+    font-size: 18px;
+    line-height: 30px;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -510,6 +546,11 @@ ul {
   .ctitem-text {
     display: none;
   }
+  .about-image {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 20px;
+  }
 }
 @media only screen and (max-width: 500px) {
   .hero-content-heading {
@@ -525,6 +566,22 @@ ul {
     font-size: 18px;
     line-height: 30px;
     padding: 18px 40px;
+  }
+  .about-content h2 {
+    font-size: 25px;
+    line-height: 38px;
+  }
+  .about-content-p {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .about-content-person span {
+    font-size: 30px;
+    line-height: 42px;
+  }
+  .about-child p {
+    font-size: 18px;
+    line-height: 20px;
   }
 }
 @media only screen and (max-width: 400px) {
