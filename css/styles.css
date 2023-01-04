@@ -62,7 +62,13 @@ ul {
 }
 
 .site-hero {
-  background: url("../img/hero-bg.png"), #1f2732;
+  background-image: url("../img/hero-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.site-hero-parent {
+  background-color: rgba(31, 39, 50, 0.81);
 }
 
 .topnav {
@@ -203,20 +209,95 @@ ul {
   margin-bottom: 0;
 }
 
+.navbar-mobile-icon {
+  display: none;
+}
+
 /* Responsive */
-@media only screen and (min-width: 1200px) {
+@media only screen and (max-width: 1100px) {
+  .navbar-menu {
+    display: none;
+  }
+  .navbar-mobile-icon {
+    display: block;
+  }
+  .navbar-mobile-icon-btn {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    color: var(--gold-color);
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
 }
-@media only screen and (max-width: 1199px) {
+@media only screen and (max-width: 992px) {
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (max-width: 892px) {
+  .site-logo img {
+    width: 300px;
+    height: 70px;
+  }
+  .topnav-btn {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 20px 40px;
+  }
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
+  .ctitem-icon {
+    width: 42px;
+    height: 42px;
+    border: 1px solid var(--gold-color);
+  }
+  .ctitem-icon svg {
+    width: 18px;
+    height: 18px;
+  }
+  .ctitem-text-first {
+    font-size: 14px;
+    line-height: 25px;
+  }
+  .ctitem-text-second {
+    font-size: 17px;
+    line-height: 20px;
+  }
 }
-@media only screen and (min-width: 600px) {
+@media only screen and (max-width: 650px) {
+  .site-logo img {
+    width: 200px;
+    height: 60px;
+  }
+  .topnav-btn {
+    font-size: 18px;
+    line-height: 25px;
+    padding: 18px 40px;
+  }
 }
 @media only screen and (max-width: 600px) {
+}
+@media only screen and (max-width: 550px) {
+  .site-logo img {
+    width: 150px;
+    height: 50px;
+  }
+  .topnav-btn {
+    font-size: 13px;
+    line-height: 20px;
+    padding: 17px 30px;
+  }
+  .navbar-ctitem:first-child {
+    margin-right: 10px;
+  }
+  .ctitem-text {
+    display: none;
+  }
 }
 @media only screen and (max-width: 500px) {
 }
 @media only screen and (max-width: 400px) {
+  .topnav {
+    display: flex;
+    flex-direction: column;
+  }
 }
