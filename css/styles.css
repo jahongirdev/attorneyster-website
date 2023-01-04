@@ -450,6 +450,43 @@ ul {
   opacity: 0.8;
 }
 
+.site-deserve {
+  background: var(--white);
+  color: var(--bg-color);
+  padding-top: 124px;
+  padding-bottom: 82px;
+}
+
+.deserve-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.deserve-title h2 {
+  font-family: var(--font-title);
+  font-size: 45px;
+  line-height: 54px;
+  text-align: center;
+  letter-spacing: 0.4px;
+  text-transform: capitalize;
+  margin-top: 0;
+  margin-bottom: 11px;
+}
+
+.deserve-title p {
+  width: 635px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: 0.4px;
+  color: #909090;
+  margin-top: 40px;
+  margin-bottom: 0;
+}
+
 /* Fullscreen mobile menu */
 
 .overlay {
