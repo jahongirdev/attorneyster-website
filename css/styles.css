@@ -487,6 +487,89 @@ ul {
   margin-bottom: 0;
 }
 
+.deserve-box {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 30px;
+}
+
+.deserve-child {
+  background: #fbfbfb;
+  padding: 30px;
+  display: flex;
+  gap: 20px;
+}
+
+.deserve-child-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid var(--gold-color);
+  padding: 25px 31px;
+}
+
+.deserve-child-left img {
+  width: 22px;
+  height: 22px;
+}
+
+.deserve-child-left span {
+  font-size: 30px;
+  line-height: 39px;
+  letter-spacing: 0.4px;
+  color: #1f2732;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.deserve-child-right h4 {
+  font-family: var(--font-title);
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 42px;
+  letter-spacing: 0.4px;
+  color: #1f2732;
+  margin-top: 0;
+  margin-bottom: 3px;
+}
+
+.deserve-child-right p {
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: 0.4px;
+  text-transform: capitalize;
+  color: #909090;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.deserve-item {
+  background: url("../img/item-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 40px 50px;
+  color: var(--white);
+}
+
+.deserve-item h4 {
+  font-size: 30px;
+  line-height: 39px;
+  letter-spacing: 0.4px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.deserve-item p {
+  width: 163px;
+  margin-right: 150px;
+  font-size: 20px;
+  line-height: 26px;
+  letter-spacing: 0.4px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 /* Fullscreen mobile menu */
 
 .overlay {
@@ -599,8 +682,24 @@ ul {
     width: 100%;
     height: 100%;
   }
+  .deserve-box {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 30px;
+  }
+  .deserve-item p {
+    width: auto;
+    margin-right: 0;
+  }
 }
 @media only screen and (max-width: 992px) {
+  .deserve-box {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: auto;
+    gap: 30px;
+  }
 }
 @media only screen and (max-width: 892px) {
   .site-logo img {
@@ -656,6 +755,9 @@ ul {
     justify-content: center;
     gap: 30px;
   }
+  .deserve-title p {
+    width: auto;
+  }
 }
 @media only screen and (max-width: 650px) {
   .site-logo img {
@@ -683,6 +785,14 @@ ul {
     font-size: 18px;
     line-height: 30px;
   }
+  .deserve-title h2 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .deserve-title p {
+    font-size: 18px;
+    line-height: 30px;
+  }
 }
 @media only screen and (max-width: 600px) {
   .topnav {
@@ -690,6 +800,34 @@ ul {
   }
   .navbar {
     padding: 30px 0px;
+  }
+  .deserve-child-left {
+    border: 1px solid var(--gold-color);
+    padding: 20px 25px;
+  }
+  .deserve-child-left img {
+    width: 20px;
+    height: 20px;
+  }
+  .deserve-child-left span {
+    font-size: 25px;
+    line-height: 30px;
+  }
+  .deserve-child-right h4 {
+    font-size: 25px;
+    line-height: 38px;
+  }
+  .deserve-child-right p {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .deserve-item h4 {
+    font-size: 25px;
+    line-height: 38px;
+  }
+  .deserve-item p {
+    font-size: 18px;
+    line-height: 28px;
   }
 }
 @media only screen and (max-width: 550px) {
@@ -752,6 +890,20 @@ ul {
   .services-top p {
     font-size: 15px;
     line-height: 20px;
+  }
+  .deserve-title h2 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .deserve-title p {
+    font-size: 16px;
+    line-height: 27px;
+  }
+}
+@media only screen and (max-width: 460px) {
+  .deserve-child {
+    display: grid;
+    grid-template-columns: auto;
   }
 }
 @media only screen and (max-width: 400px) {
