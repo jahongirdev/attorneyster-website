@@ -811,6 +811,65 @@ ul {
   margin-top: 20px;
 }
 
+.site-team {
+  background: var(--white);
+  padding: 130px 0px;
+}
+
+.team-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.team-title h2 {
+  width: 692px;
+  font-family: var(--font-title);
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 54px;
+  letter-spacing: 0.4px;
+  text-transform: capitalize;
+  text-align: center;
+  color: var(--bg-color);
+  margin-top: 0;
+  margin-bottom: 11px;
+}
+
+.team-box {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-between;
+  align-items: center;
+  gap: 31px;
+  margin-top: 70px;
+}
+
+.team-item-text {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.team-item-text h4 {
+  font-family: var(--font-title);
+  font-size: 30px;
+  line-height: 39px;
+  letter-spacing: 0.4px;
+  color: var(--bg-color);
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.team-item-text span {
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: 0.4px;
+  color: var(--gold-color);
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 /* Fullscreen mobile menu */
 
 .overlay {
@@ -1054,6 +1113,19 @@ ul {
     display: flex;
     flex-direction: column;
   }
+  .team-title h2 {
+    font-size: 35px;
+    line-height: 44px;
+    width: auto;
+  }
+  .team-box {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 31px;
+    margin-top: 50px;
+  }
 }
 @media only screen and (max-width: 650px) {
   .site-logo img {
@@ -1184,6 +1256,10 @@ ul {
     font-size: 30px;
     line-height: 40px;
   }
+  .team-title h2 {
+    font-size: 30px;
+    line-height: 40px;
+  }
 }
 @media only screen and (max-width: 500px) {
   .hero-content-heading {
@@ -1246,6 +1322,10 @@ ul {
   .deserve-child {
     display: grid;
     grid-template-columns: auto;
+  }
+  .team-title h2 {
+    font-size: 25px;
+    line-height: 30px;
   }
 }
 @media only screen and (max-width: 400px) {
