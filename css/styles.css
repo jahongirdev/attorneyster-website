@@ -735,6 +735,82 @@ ul {
   opacity: 0.8;
 }
 
+.site-reviews {
+  padding: 125px 0px 180px 0px;
+}
+
+.reviews-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.reviews-title h2 {
+  font-family: var(--font-title);
+  font-size: 45px;
+  line-height: 54px;
+  text-align: center;
+  letter-spacing: 0.4px;
+  margin-top: 0;
+  margin-bottom: 11px;
+}
+
+.reviews-box {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.review-first {
+  background: #2e3947;
+  border-radius: 1px 1px 1px 40px;
+  padding: 50px 45px;
+  margin-bottom: 20px;
+}
+
+.review-first p {
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+
+.review-profile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.rv-text {
+  margin-left: 22px;
+}
+
+.rv-text span {
+  font-family: var(--font-title);
+  font-size: 30px;
+  line-height: 39px;
+  letter-spacing: 0.4px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.rv-text p {
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: 0.4px;
+  color: var(--text-color);
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.review-second {
+  background: #2e3947;
+  border-radius: 40px 1px 1px 1px;
+  padding: 50px 45px;
+  margin-top: 20px;
+}
+
 /* Fullscreen mobile menu */
 
 .overlay {
@@ -865,6 +941,12 @@ ul {
   .cases-right {
     margin-top: 60px;
   }
+  .reviews-box {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    gap: 40px;
+  }
 }
 @media only screen and (max-width: 992px) {
   .deserve-box {
@@ -903,6 +985,19 @@ ul {
     font-size: 20px;
     line-height: 30px;
     padding: 20px 40px;
+  }
+  .reviews-box {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    gap: 40px;
+  }
+  .second-rv {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .rv-prof {
+    margin-top: 20px;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -1023,6 +1118,10 @@ ul {
     font-size: 16px;
     line-height: 20px;
   }
+  .reviews-title h2 {
+    font-size: 40px;
+    line-height: 50px;
+  }
 }
 @media only screen and (max-width: 600px) {
   .topnav {
@@ -1080,6 +1179,10 @@ ul {
     display: grid;
     grid-template-columns: auto;
     gap: 20px;
+  }
+  .reviews-title h2 {
+    font-size: 30px;
+    line-height: 40px;
   }
 }
 @media only screen and (max-width: 500px) {
@@ -1149,5 +1252,9 @@ ul {
   .topnav {
     display: flex;
     flex-direction: column;
+  }
+  .reviews-title h2 {
+    font-size: 25px;
+    line-height: 30px;
   }
 }
