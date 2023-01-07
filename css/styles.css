@@ -870,6 +870,122 @@ ul {
   margin-bottom: 0;
 }
 
+.site-consult {
+  padding: 150px 0px;
+}
+
+.consult {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 70px;
+}
+
+.consult-left h2 {
+  font-family: var(--font-title);
+  font-size: 45px;
+  line-height: 58px;
+  letter-spacing: 0.4px;
+  text-transform: capitalize;
+  margin-top: 0;
+  margin-bottom: 9px;
+}
+
+.consult-left p {
+  width: 628px;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: 0.4px;
+  margin-top: 43px;
+  margin-bottom: 57px;
+}
+
+.consult-btn {
+  background: var(--gold-color);
+  border: 1px solid var(--gold-color);
+  padding: 24px 70px;
+  color: #1f2732;
+  transition: all 0.2s ease;
+}
+
+.consult-btn:hover {
+  background: transparent;
+  color: var(--gold-color);
+}
+
+.consult-btn:active,
+.consult-btn:focus {
+  opacity: 0.8;
+}
+
+.consult-right {
+  background: var(--white);
+  padding: 40px;
+}
+
+.consult-right-box {
+  border: 15px solid #d7d7d7;
+  padding: 50px 40px;
+}
+
+.consult-right-box h3 {
+  font-family: var(--font-title);
+  font-size: 42px;
+  line-height: 55px;
+  letter-spacing: 0.4px;
+  color: #1f2732;
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.consult-right-box p {
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: 0.4px;
+  color: #909090;
+  margin-top: 0;
+  margin-bottom: 37px;
+}
+
+.call-us {
+  display: flex;
+  align-items: center;
+}
+
+.call-us:hover .call-us-phone {
+  background: var(--bg-color);
+}
+
+.call-us-phone {
+  padding: 22px;
+  background: var(--gold-color);
+  display: flex;
+  align-items: center;
+}
+
+.call-us-text {
+  margin-left: 15px;
+}
+
+.call-us-text span {
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.4px;
+  color: #1f2732;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.call-us-text p {
+  font-size: 30px;
+  line-height: 42px;
+  letter-spacing: 0.4px;
+  color: #1f2732;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 /* Fullscreen mobile menu */
 
 .overlay {
@@ -1006,6 +1122,16 @@ ul {
     justify-content: space-between;
     gap: 40px;
   }
+  .consult {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+  }
+  .consult-left p {
+    width: auto;
+  }
 }
 @media only screen and (max-width: 992px) {
   .deserve-box {
@@ -1126,6 +1252,17 @@ ul {
     gap: 31px;
     margin-top: 50px;
   }
+  .consult-left h2 {
+    font-size: 35px;
+    line-height: 48px;
+  }
+  .consult-left p {
+    font-size: 17px;
+    line-height: 28px;
+  }
+  .consult-right {
+    padding: 20px;
+  }
 }
 @media only screen and (max-width: 650px) {
   .site-logo img {
@@ -1193,6 +1330,17 @@ ul {
   .reviews-title h2 {
     font-size: 40px;
     line-height: 50px;
+  }
+  .consult-right-box {
+    padding: 40px 30px;
+  }
+  .consult-right-box h3 {
+    font-size: 35px;
+    line-height: 45px;
+  }
+  .consult-right-box p {
+    font-size: 17px;
+    line-height: 28px;
   }
 }
 @media only screen and (max-width: 600px) {
