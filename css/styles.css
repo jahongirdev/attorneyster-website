@@ -1305,6 +1305,10 @@ ul {
   .consult-left p {
     width: auto;
   }
+  .blogs-content {
+    display: flex;
+    flex-direction: column;
+  }
 }
 @media only screen and (max-width: 992px) {
   .deserve-box {
@@ -1445,6 +1449,16 @@ ul {
   .contact-item {
     display: flex;
     flex-direction: column;
+  }
+  .blogs-content-right h2 {
+    width: auto;
+    font-size: 38px;
+    line-height: 48px;
+  }
+  .blogs-content-right p {
+    width: auto;
+    font-size: 18px;
+    line-height: 28px;
   }
 }
 @media only screen and (max-width: 650px) {
@@ -1604,6 +1618,25 @@ ul {
     font-size: 30px;
     line-height: 40px;
   }
+  .blogs-title h2 {
+    font-size: 35px;
+    line-height: 44px;
+  }
+  .right-title {
+    gap: 10px;
+  }
+  .right-title span {
+    font-size: 17px;
+    line-height: 24px;
+  }
+  .blogs-content-right h2 {
+    font-size: 30px;
+    line-height: 38px;
+  }
+  .blogs-content-right p {
+    font-size: 15px;
+    line-height: 25px;
+  }
 }
 @media only screen and (max-width: 500px) {
   .hero-content-heading {
@@ -1680,5 +1713,12 @@ ul {
   .reviews-title h2 {
     font-size: 25px;
     line-height: 30px;
+  }
+  .right-title {
+    display: flex;
+    flex-direction: column;
+  }
+  .right-title span:nth-child(2) {
+    display: none;
   }
 }
