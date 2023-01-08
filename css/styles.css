@@ -986,6 +986,88 @@ ul {
   margin-bottom: 0;
 }
 
+.site-contact {
+  background: url("../img/contact-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 140px 40px;
+}
+
+.contact {
+  background: #1f2732;
+  padding: 100px;
+}
+
+.contact-item {
+  display: flex;
+  flex-direction: row;
+  gap: 46px;
+  margin-bottom: 36px;
+}
+
+.contact-item input {
+  width: 100%;
+  background: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #3b434e;
+  padding-bottom: 26px;
+  color: var(--white);
+  font-size: 25px;
+  line-height: 22px;
+  letter-spacing: 0.4px;
+}
+
+.contact-item input::placeholder {
+  color: var(--text-color);
+}
+
+.contact-form textarea {
+  width: 100%;
+  background: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #3b434e;
+  margin-top: 20px;
+  padding-bottom: 60px;
+  color: var(--white);
+  font-size: 25px;
+  line-height: 22px;
+  letter-spacing: 0.4px;
+}
+
+.contact-form textarea::placeholder {
+  color: var(--text-color);
+}
+
+.contact-button {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.contact-button button {
+  background: var(--white);
+  border: 1px solid var(--white);
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 22px;
+  letter-spacing: 0.4px;
+  color: #3b434e;
+  padding: 32px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.contact-button button:hover {
+  background: transparent;
+  color: var(--white);
+}
+
+.contact-button button:active,
+.contact-button button:focus {
+  opacity: 0.8;
+}
+
 /* Fullscreen mobile menu */
 
 .overlay {
@@ -1263,6 +1345,16 @@ ul {
   .consult-right {
     padding: 20px;
   }
+  .site-contact {
+    padding: 20px 0px;
+  }
+  .contact {
+    padding: 50px;
+  }
+  .contact-item {
+    display: flex;
+    flex-direction: column;
+  }
 }
 @media only screen and (max-width: 650px) {
   .site-logo img {
@@ -1377,6 +1469,19 @@ ul {
   .deserve-item p {
     font-size: 18px;
     line-height: 28px;
+  }
+  .contact-item input,
+  .contact-form textarea {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .contact-button {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-button button {
+    font-size: 18px;
+    line-height: 18px;
   }
 }
 @media only screen and (max-width: 550px) {
